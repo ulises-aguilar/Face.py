@@ -1,13 +1,10 @@
-# Face.py
-# Base project format.
-# Documentation https://github.com/raspberrypilearning/getting-started-with-minecraft-pi/blob/master/worksheet.md
 from mcpi.minecraft import Minecraft
 from mcpi import block
 from time import sleep
 import random
 def init():
     #ip = "192.168.7.84"
-    ip = "192.168.7.136"
+    ip = "192.168.7.207"
     mc = Minecraft.create(ip, 4711)
     #mc.setting("world_immutable",True)
     #x, y, z = mc.player.getPos()        
@@ -79,15 +76,20 @@ def main():
           "1001111001",
           "1001111001",
           "1111111111",
-          "1111111111",# Base project format.
-# Documentation https://github.com/raspberrypilearning/getting-started-with-minecraft-pi/blob/master/worksheet.md
+          "1111111111",
+          "1110000111",
+          "1101111011",
+          "1011111101",
+          "1111111111",
+          "1111111111"]
+          
 from mcpi.minecraft import Minecraft
 from mcpi import block
 from time import sleep
 import random
 def init():
     #ip = "192.168.7.84"
-    ip = "192.168.7.136"
+    ip = "192.168.7.207"
     mc = Minecraft.create(ip, 4711)
     #mc.setting("world_immutable",True)
     #x, y, z = mc.player.getPos()        
@@ -181,24 +183,17 @@ def main():
   x,y,z = mc.player.getPos()
   done = 0  
   h = 10;k = 10;l = 0
-  while done < 4:
+  while done < 5:
     clearAir(mc,x,y,z)
     output2dspace(mc,F,x+h,y+h,z+l) 
     mc.player.setPos(x+h,y,z+l)
     h = h+3;k = k +2; l = l + 4
     done = done + 1
-  mc.player.setPos(x,y+20,z)
+  mc.player.setPos(x,y+10,z)
     #matrixY(mc,x,y,z)
 
 if __name__ == "__main__":
-    main()
-          "1110000111",
-          "1101111011",
-          "1011111101",
-          "1111111111",
-          "1111111111"]
-          
-  K =  [  "0011000100",
+    main()  K =  [  "0011000100",
           "0011001100",
           "0011011000",
           "0011110000",
@@ -213,13 +208,13 @@ if __name__ == "__main__":
   x,y,z = mc.player.getPos()
   done = 0  
   h = 10;k = 10;l = 0
-  while done < 4:
+  while done < 5:
     clearAir(mc,x,y,z)
     output2dspace(mc,F,x+h,y+h,z+l) 
     mc.player.setPos(x+h,y,z+l)
     h = h+3;k = k +2; l = l + 4
     done = done + 1
-  mc.player.setPos(x,y+20,z)
+  mc.player.setPos(x,y+10,z)
     #matrixY(mc,x,y,z)
 
 if __name__ == "__main__":
